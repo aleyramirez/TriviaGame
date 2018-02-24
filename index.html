@@ -1,0 +1,45 @@
+<!DOCTYPE> 
+<html>
+    <head>
+        <title>Trivia Game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+<body>
+    <div class="container-fluid text-center">
+        <h1>Trivia Game</h1>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Number of questions: <span id="question_counter"></span></h3>
+                <br>
+                <h3>Correct: <span id="scoreCorrect"></span></h3>
+                <br>
+                <h3>Incorrect: <span id="scoreIncorrect"></span></h3>
+                <h3>time: <span id="time"></span></h3>
+            </div>
+            <div class="col-md-8 text-center">
+                <h3>Question</h3>
+                <br>
+                <h3 id="questions"></h3>
+                    <ul id="questionOptions">
+                        <li>
+                            <a href="#" class="optionBoxes" id="A"></a>
+                        </li>
+                        <li><a href="#" class="optionBoxes" id="B"></a></li>
+                        <li><a href="#" class="optionBoxes" id="C"></a></li>
+                        <li><a href="#" class="optionBoxes" id="D"></a></li>
+                    </ul>
+                <br>
+                <h3 id="question_answers"></h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
