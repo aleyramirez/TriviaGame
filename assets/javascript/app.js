@@ -15,10 +15,14 @@ $( document ).ready(function() {
 
     //DOM Manipulation
     document.getElementById('questions').innerHTML = question_1;
-    document.getElementById('A').innerHTML = questionOptions_1[0];
-    document.getElementById('B').innerHTML = questionOptions_1[1];
-    document.getElementById('C').innerHTML = questionOptions_1[2];
-    document.getElementById('D').innerHTML = questionOptions_1[3];
+    // document.getElementById('A').innerHTML = questionOptions_1[0];
+    // document.getElementById('B').innerHTML = questionOptions_1[1];
+    // document.getElementById('C').innerHTML = questionOptions_1[2];
+    // document.getElementById('D').innerHTML = questionOptions_1[3];
+
+    $('#questionOptions').children().each(function(index, element){
+        $(element).find('a').html(questionOptions_1[index]); 
+    });
 
 
     //Event handlers
@@ -44,7 +48,7 @@ console.log();
         timeleft--;
         document.getElementById("time").textContent = timeleft;
         if (timeleft == 0) {
-            alert("Time Up")
+            alert("Time's Up")
         }
     },1500);
 });
